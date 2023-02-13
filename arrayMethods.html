@@ -1,0 +1,82 @@
+<html>
+    <head></head>
+    <body>
+        <button class="btn">Click me</button>
+
+        <script>
+            let users = [
+                {firstName: "Susan", lastName: "Steward", age: 14},
+                {firstName: "Martin", lastName: "Trajkov", age: 27},
+                {firstName: "Kristijan", lastName: "Krstev", age: 30},
+            ];
+
+            // map sekogas ni vrakja nova niza, foreach ja menuva originalnata niza
+            // ne ja menuva goleminata na originalnata niza 
+            let mapUsers = users.map((user) => {
+                let fullName = user.firstName + " " + user.lastName;
+                return fullName;
+            });
+            // console.log(mapUsers);
+            // filter method provides new array depending on certain criteria
+            let result = users.filter((user) => user.age > 20);
+            // console.log(result);
+            // interates through the array looking for an item to meet the specified condition
+            let onePerson = users.find((person) => person.firstName === 'Martin');    
+            // console.log(onePerson);
+
+            // destructuring arrays
+            let fruits = ["mango", "apples", "lemons", "orange"];
+            let fruit1 = fruits[0];
+            let fruit2 = fruits[1];
+            let [fruitOne,,fruitThree] = fruits;
+            // console.log(fruitOne, fruitThree);
+
+             const human = {
+                name: "Martin",
+                lastName: "Trajkov",
+                age: 27,
+                hobies: {
+                    hobi1: "reading",
+                    hobi2: "football"
+                }
+             };
+
+             // destructuring object
+            //  const { name, age, hobies: {hobi1} } = human;
+            const { name, age, hobies, hobies: {hobi2} } = human;
+            //  if(age > 27){
+            //     console.log("ADULT");
+            //  } else {
+            //     console.log(name);
+            //  }
+            // console.log(hobies);
+            // console.log(hobi2);
+
+            const { name1, age1, hobies: {hobiTwo} } = human;
+            //  if(age > 27){
+            //     console.log("ADULT");
+            //  } else {
+            //     console.log(name);
+            //  }
+            // this will throw an error
+            // console.log(hobies);
+            // console.log(hobi2);
+
+            let fruits2 = ["mango", "apples", "lemons", "orange"];    
+
+            let [firstFruit, ...rest] = fruits2;
+            console.log(rest);
+
+            let pets = ["dog", "cat"];
+            let wildAnimals = ["lion", "wolf", "tiger"];
+
+            let animals = [pets, wildAnimals];
+            console.log(animals);
+            
+            // we can use this for multiple arrays
+            let animalsSpread = [...pets, ...wildAnimals, ...fruits2];
+            console.log(animalsSpread);
+            
+        </script>
+    </body>
+</html>
