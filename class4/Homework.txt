@@ -1,0 +1,19 @@
+Da napravime edna ednostavna aplikacija za glasanje za najdobri jadenja
+
+Da stavime sliki od nekolku jadenja, pokraj sekoja slika neka ima dve kopcinja
+Like i Dislike i neka pod sekoja slika stoi kolku lajkovi imaat i kolku dislikes
+
+Isto taka neka imame i edna tabela kaj sto kje se pokazuvaat site jadenja i kolku glasovi imaat
+
+preku useEffect da napravime da koga nekoj od jadenjata dostigne do 10 likes da se ispise
+vo konzola We have a winner
+
+
+Ova se pocetnite baranja, dokolku sakate bi mozele da si ja komplicirate sami kako na primer
+
+povekje jadenja
+koristenje na dva ili poveke useEffect
+da pri glas na sekoj neparen broj jadenje se pokazuva nekoj element ili nesto vo konzola
+.
+.
+.

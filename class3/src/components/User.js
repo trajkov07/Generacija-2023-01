@@ -37,3 +37,16 @@ User.defaultProps = {
 // element so tekst You don't have access
 // no stavete i default props da ako boolean propety-to
 // ne e prateno po default da bide false
+
+// Neka imame nekoja student komponenta
+// neka za studentot cuvame name/lastName / index
+// neka prakame preku parent komponenta nekoja lista
+// na studenti i vo student komponentata da ja prikazime
+// ovaa lista vo tabela
+// pokraj listata da prakame i uste edno property
+// koe kje bide semestar, i kje se prikazuva na ekranot
+// posle tabelata
+// Da staime PropTypes za studentite i da bide required
+// Neka ima i za semestarot PropTypes
+// dokolku ne go pratime semestarot sekogas da se ispisuyva
+// zimski

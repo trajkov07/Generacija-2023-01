@@ -31,3 +31,7 @@ export const Car = ({ cars }) => {
 Car.propTypes = {
   cars: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
+
+// npm install prop-types --save
+// import PropTypes from "prop-types";
+// Add the props
