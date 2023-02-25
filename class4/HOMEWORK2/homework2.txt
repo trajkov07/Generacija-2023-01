@@ -1,0 +1,5 @@
+Da se napravi vezbata kako na slikata vo istoimeniot folder.
+Da stavime 4 inputi, neka ima, firstName, lastName, email, password i godini, i neka ovie vrednosti se cuvaat 
+vo stejt i prikazuvaat vo nekoja tabela, no neka ima i edno kopce so tekst 
+Show results, pa taka koga kje se klikne na kopceto da se pokazat rezultatite, ako se klikne pak da gi snema.
+Vnimavajte koga kje se pokazuvaat rezultatite tekstot na kopceto bi trebalo da bide Hide results.
