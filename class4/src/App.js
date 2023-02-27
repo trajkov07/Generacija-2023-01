@@ -15,6 +15,7 @@ function App() {
   useEffect(() => {
     console.log("Inside useEffect");
   }, [password]);
+  // [] - this is called dependency array
 
   return (
     <div className="App">
