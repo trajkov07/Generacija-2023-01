@@ -1,0 +1,19 @@
+Da kreirame, login forma kade kje imame edna parent komponenta Login.js vo koja kje go cuvame celiot stejt za site polinja 
+
+Neka potoa imame dve drugi komponenti, Input i Dropdown vo koi kje se prikazuvaat polinjata od slikata. 
+
+Dropdown-ot neka pokazuva nekoja lista od socijalni mrezi koja kje bide definirana vo Login.js komponentata
+
+Preku input komponentata da gi prikazuvame Username, Password i Comment poleto 
+Vnimavajte pokraj passwordot da postoi kopce pri cij klick passwordot kje se pokazuva ili krie 
+
+Pokraj delot za komentar da ima kopce so koe pri klik komentar delot kje stanuva ili textarea za golem komentar ili obicen input za pomal komentar 
+
+Pri klik na sign in da se naprai submit i da se ispecat vo alert vrednostite na site polinja 
+
+
+
+BONUS: Dodavanje na validacija:
+komentarot, dokolku e obicen input ne smee da sodrzi poveke od 20 karakteri a dokolku e text area ne smee da ima poveke od 50 
+passwordot da mora da bide najmalku 8 karakteri i da sodrzi barem eden specijalen znak 
+username-ot dokolku izbranata opcija e facebook da mora da ima najmalku 5 karakteri a dokolku e bilo sto drugo najmalku 2

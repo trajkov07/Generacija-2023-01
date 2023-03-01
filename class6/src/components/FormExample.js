@@ -108,3 +108,13 @@ export const FormExample = () => {
     </div>
   );
 };
+
+// Neka imame forma vo koja kje imame ime, prezime i telefonski broj
+// neka pri submit se proveruvaat slednive validacii
+// imeto mora da bide najmalku 3 karakteri a najmnogu 20
+// prezimeto mora da bide najmalku 5 karakteri a najmnogu 20
+// telefonskiot, zadolzitelno e da bide samo brojki i da ima tocno 9 brojki
+
+// dokolku nekoi od ovie validacii ne e zadovolena da prikazeme soodveten error
+// dokolku se zadovoleni site validaciii da ja skrieme formata i da
+// prikazeme nekoj tekst vo nekoj h1 element Form was submitted
