@@ -1,8 +1,9 @@
-import { User2Context } from "../App";
+import { User2Context } from "../uttils/User2Context";
 import React from "react";
 
 export const Location = () => {
-  const location = React.useContext(User2Context);
+  const contextLocation = React.useContext(User2Context);
+  const location = contextLocation.user;
 
   return (
     <div>

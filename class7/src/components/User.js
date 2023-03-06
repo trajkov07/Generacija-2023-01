@@ -1,4 +1,4 @@
-import { UserContext } from "../App";
+import { UserContext } from "../index";
 
 export function User() {
   return (
