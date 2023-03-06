@@ -36,3 +36,20 @@ function App() {
 }
 
 export default App;
+
+// Neka imame nekoj objekt movie koj vnatre kje ima lista na sliki
+// (barem 3), i neka ima za filmot, ime, rating, zanr, plot, releaseDate
+// linkToTrailer.
+
+// Da kreirame komponenta Movie, preku koja kje prikazime 2 drugi
+// komponenti, koj kje bidat informationAboutMovie i vnatre kje gi imame
+// site informacii za filmot osven slikite i linkot do trailerot
+// tie kje gi prikazite vo druga komponenta, no objektot mora da bide
+// vo app.js i da bide prenesen preku context, vo drugite komponenti
+// informaciite da se zemaat preku contextot
+
+// Bonus: Da napraime uste edna komponenta visitors, vo koja kje
+// prikazime nekoja lista od usernames koja kje bide pratena isto
+// preku app.js odnosno preku context,
+
+// Potoa da go izmenime i da imame niza od movies
