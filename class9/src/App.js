@@ -21,3 +21,13 @@ function App() {
 // PAUZA DO 21:05
 
 export default App;
+
+// Da kreirame navigacija, kaj sto kje imame homepage so
+// nekoj tekst Welcome to our page! i uste edna ruta sto kje ne nosi na users
+// potoa da kreirame nekoja komponenta Users kaj sto vnatre kje prikazuvame
+// useri od api-to https://jsonplaceholder.typicode.com/ da prikazuvame
+// samo ime i prezime, dokolku nema useri da prikazuvame Loading ....
+
+// Pokraj ovie osnovni informacii, da imame nekoj nacin da pokazime
+// detali za sekoj userite, vo taa posebna komponenta pokazete sto moze
+// poveke za userot
