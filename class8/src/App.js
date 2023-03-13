@@ -10,16 +10,34 @@ import { BookLayout } from "./components/BookLayout";
 import "./css/style.css";
 
 function App() {
-  // let routes = useRoutes([
-  //   {
-  //     path: "/",
-  //     element: <Home />,
-  //   },
-  //   {
-  //     path: "*",
-  //     element: <NotFound />,
-  //   },
-  // ]);
+  let routes = useRoutes([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "*",
+      element: <NotFound />,
+    },
+    {
+      path: "/books",
+      element: <BookLayout />,
+      children: [
+        {
+          index: true,
+          element: <BookList />,
+        },
+        {
+          path: ":id",
+          element: <Book />,
+        },
+        {
+          path: "new",
+          element: <NewBook />,
+        },
+      ],
+    },
+  ]);
 
   return (
     <div className="App">
@@ -69,21 +87,22 @@ function App() {
       {/*
         // another way to show routes, through javascript
       {routes} */}
+      {routes}
       <Routes>
         {/* the part in element could also be just a regular jsx element */}
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
 
-        <Route path="/books" element={<BookLayout />}>
+        {/* <Route path="/books" element={<BookLayout />}>
           <Route index element={<BookList />} />
           <Route path=":id" element={<Book />} />
           <Route path="new" element={<NewBook />} />
-        </Route>
+        </Route> */}
 
         {/* <Route path="/books" element={<BookList />} />
         <Route path="/books/:id" element={<Book />} />
         <Route path="/books/new" element={<NewBook />} /> */}
 
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </div>
   );
@@ -101,7 +120,7 @@ export default App;
 // Potoa kreirajte ruti za home i za movies i navigacija za da mozeme da stigneme
 // do niv
 
-//Da dodademe uste edna komponenta newMovie koja kje se renderira na /movies/new
+// Da dodademe uste edna komponenta newMovie koja kje se renderira na /movies/new
 // vnatre neka imame nekoja forma so 3 inputi, ime / zanr i rating, da gi cuvame vo nekoj stejt
 // i pri submit na formata da gi ispecatime vo konzola, da se napravi notFound komponenta
 // kade sto vo h1 kje stavime 404 so crven tekst a pod nego nekoj obicen div koj kje bide sin
