@@ -12,6 +12,9 @@ export const Navigation = () => {
       <li>
         <Link to="/albums">Albums</Link>
       </li>
+      <li>
+        <Link to="/gallery">Gallery</Link>
+      </li>
     </ul>
   );
 };
