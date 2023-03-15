@@ -79,3 +79,6 @@ export default App;
 // Pokraj ovie osnovni informacii, da imame nekoj nacin da pokazime
 // detali za sekoj userite, vo taa posebna komponenta pokazete sto moze
 // poveke za userot
+
+// Da gi prikazime objektite sto se vrakaat so ID, ime, status
+// i slika od animiraniov lik
