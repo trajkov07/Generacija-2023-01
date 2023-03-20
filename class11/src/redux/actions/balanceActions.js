@@ -5,6 +5,15 @@ export const depositBalance = (value) => {
   };
 };
 
+export const depositBalanceAsync = (value) => {
+  return (dispatch) => {
+    setTimeout(() => {
+      console.log("Dispathing action");
+      dispatch(depositBalance(value));
+    }, 5000);
+  };
+};
+
 export const withdrawBalance = (value) => {
   return {
     type: "WITHDRAW",

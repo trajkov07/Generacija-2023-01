@@ -1,5 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import { depositBalance } from "../redux/actions/balanceActions";
+import {
+  depositBalance,
+  depositBalanceAsync,
+} from "../redux/actions/balanceActions";
 
 export const Salary = () => {
   const monthlySallary = 2000;
@@ -13,6 +16,9 @@ export const Salary = () => {
       </button>
       <button onClick={() => dispatch(depositBalance(currentBalance))}>
         Double my balance
+      </button>
+      <button onClick={() => dispatch(depositBalanceAsync(monthlySallary))}>
+        Add my monthly sallary after some time
       </button>
     </div>
   );
