@@ -67,3 +67,9 @@ export default App;
 // prvicno e 0 i preku kopcinjava da mozeme da ja menuvame
 // da imame dve akcii INCREMENT i DECREMENT za koj kje imame poseben reducer
 // i normalno taa vrednost da se pokazuva na ekran
+
+// Sega da kreirame nekoja nova komponenta, slicna na sallary, taa komponenta da ima vnatre
+// eden input so broj i 3 kopcinja, ednoto da ja dodava momentalnata vrednost sto ja imame vo redux
+// drugovo da ja dodava onaa vrednost sto se naoga vo inputot
+// tretoto kopce da ja dodava vrednost od inputot no asinhrono posle 3 sekundi, moze da stavime
+// vnatre nekoj console.log, za ova da iskoristime middleware i redux thunk
