@@ -61,7 +61,6 @@ function App() {
 }
 
 export default App;
-
 // Da imame dve kopcinja koi ednoto kje bide za increment
 // drugoto kje bide za decrement za vrednost 1, neka vrednosta vo stejtot
 // prvicno e 0 i preku kopcinjava da mozeme da ja menuvame

@@ -3,8 +3,8 @@ import { buyCake, restockCakes } from "../actions/CakeActions";
 
 export const Cake = () => {
   const dispatch = useDispatch();
-  const cakes = useSelector((state) => state.cakes);
-  const message = useSelector((state) => state.message);
+  const cakes = useSelector((state) => state.CakeReducer.cakes);
+  const message = useSelector((state) => state.CakeReducer.message);
 
   return (
     <div>
