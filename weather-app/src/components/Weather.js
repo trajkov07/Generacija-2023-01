@@ -1,16 +1,23 @@
 import { useState } from "react";
 import { api } from "../constants/ApiConstants";
+import "../css/Weather.css";
 
 export function Weather() {
-  const [weather, setWeather] = useState();
+  const [weather, setWeather] = useState(undefined);
 
   function getWeatherInfo(selectedCity) {
     console.log(selectedCity);
     fetch(
       `${api.base}/forecast?q=${selectedCity}&units=metric&appid=${api.key}`
     )
-      .then((res) => res.json())
-      .then((res) => setWeather(res))
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((res) => {
+        console.log(res);
+        setWeather(res);
+      })
       .catch((err) => {
         alert(err);
       });
@@ -50,6 +57,30 @@ export function Weather() {
           Mavrovo
         </button>
       </div>
+      <div className="local-container">
+        {weather &&
+          weather.list.map((weatherList, i) => {
+            return (
+              <div key={i} className="card">
+                <div className="location-box">
+                  <div className="location">
+                    {weather.city.name}, {weather.city.country}
+                  </div>
+                  <div className="date">{weatherList.dt_txt}</div>
+                </div>
+                <div className="weather-box">
+                  <div className="temp">
+                    {Math.round(weatherList.main.temp)}&#8451;
+                  </div>
+                  <div className="weather">{weatherList.weather[0].main}</div>
+                </div>
+                <hr />
+              </div>
+            );
+          })}
+      </div>
     </div>
   );
 }
+
+// PAUZA do 20:43
